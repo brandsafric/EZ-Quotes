@@ -8,7 +8,7 @@
             var url = "<?php print api_url('save_quote'); ?>";
             var post = $.post(url, data);
             post.done(function (data) {
-                mw.reload_module("ez_quotes");
+                mw.reload_module_parent("ez_quotes");
                 mw.reload_module("ez_quotes/list");
             });
         });

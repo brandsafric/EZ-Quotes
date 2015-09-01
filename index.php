@@ -8,4 +8,6 @@
         </blockquote>
     <?php endforeach; ?>
 </div>
+<?php else: ?>
+<?php print lnotif("Click here to edit the quotes"); ?>
 <?php endif; ?>
