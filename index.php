@@ -13,5 +13,9 @@ $(document).ready(function() { $('.quotes').quovolver(); });
     <?php endforeach; ?>
 </div>
 <?php else: ?>
+<<<<<<< HEAD
 <?php print lnotif("Edit EZ Quotes"); ?>
+=======
+<?php print lnotif("Click here to edit the quotes"); ?>
+>>>>>>> origin/master
 <?php endif; ?>
