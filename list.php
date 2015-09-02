@@ -9,7 +9,7 @@
             var url = "<?php print api_url('delete_quote'); ?>";
             var post = $.post(url, data);
             post.done(function (data) {
-                mw.reload_module("quotes");
+                mw.reload_module_parent("quotes");
                 mw.reload_module("quotes/list");
             });
         }

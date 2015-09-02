@@ -1,3 +1,7 @@
+<script src="<?php print $config['url_to_module'] ?>js/jquery.quovolver.js"></script>
+<script type="text/javascript">
+$(document).ready(function() { $('.quotes').quovolver(); });
+</script>
 <?php $data = get_quotes("no_limit=true"); ?>
 <?php if ($data): ?>
 <div id="ezq_<?php print $params['id'] ?>" class="quotes">
@@ -8,4 +12,6 @@
         </blockquote>
     <?php endforeach; ?>
 </div>
+<?php else: ?>
+<?php print lnotif("Edit EZ Quotes"); ?>
 <?php endif; ?>
